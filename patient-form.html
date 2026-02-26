@@ -1,9 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Cross Physical Therapy - Patient Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.onload = function() {
+      const now = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('date-today').textContent = now.toLocaleDateString('en-US', options);
+    };
+  </script>
+</head>
+<body>
+
+
 <!--
 Program name: patient-form.html
 Author: Gabriel Lopez
 Date created: 2/25/26
 Date last edited: 2/26/2026
-Version: 1.4
+Version: 1.5
 Description: A Medical Company Registration Form
 
 <!DOCTYPE html>
@@ -222,3 +239,4 @@ form {
 </body>
 
 </html>
+
