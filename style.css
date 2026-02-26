@@ -36,7 +36,7 @@ h1 {
 
 #header img {
   vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 80px;
 }
 
 /* Table Layout */
@@ -110,4 +110,5 @@ label {
   margin-right: 15px;
   font-weight: bold;
   color: #0a1f44;                  /* Navy */
+
 }
