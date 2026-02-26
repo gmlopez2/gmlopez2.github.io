@@ -1,0 +1,223 @@
+<!--
+Program name: patient-form.html
+Author: Gabriel Lopez
+Date created: 2/25/26
+Date last edited: The date you submitted it
+Version: (start with 1.0 and change it as you make changes)
+Description: A Medical Company Registration Form
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Enhanced Registration Form</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 800px;
+}
+
+.inline {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.section {
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Patient Registration Form</h1>
+
+<form>
+
+<!-- ================= NAME SECTION ================= -->
+<div class="section">
+<h3>Name</h3>
+
+<div class="inline">
+<label>First Name:</label><br>
+<input type="text" maxlength="30" required>
+</div>
+
+<div class="inline">
+<label>Middle Initial:</label><br>
+<input type="text" maxlength="1">
+</div>
+
+<div class="inline">
+<label>Last Name:</label><br>
+<input type="text" maxlength="30" required>
+</div>
+
+</div>
+
+<!-- ================= DOB & SSN ================= -->
+<div class="section">
+<h3>Personal Information</h3>
+
+<label>Date of Birth (MM/DD/YYYY):</label><br>
+<input type="text" placeholder="MM/DD/YYYY" pattern="\d{2}/\d{2}/\d{4}" required><br><br>
+
+<label>Social Security:</label><br>
+<input type="password" maxlength="11" placeholder="XXX-XX-XXXX" required>
+</div>
+
+<!-- ================= ADDRESS ================= -->
+<div class="section">
+<h3>Address</h3>
+
+<label>Address Line 1:</label><br>
+<input type="text" maxlength="30" required><br><br>
+
+<label>Address Line 2:</label><br>
+<input type="text" maxlength="30"><br><br>
+
+<div class="inline">
+<label>City:</label><br>
+<input type="text" maxlength="30" required>
+</div>
+
+<div class="inline">
+<label>State:</label><br>
+<select required>
+<option value="">Select State</option>
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="HI">Hawaii</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Nevada</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NM">New Mexico</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="ND">North Dakota</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="OR">Oregon</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="SD">South Dakota</option>
+<option value="TN">Tennessee</option>
+<option value="TX">Texas</option>
+<option value="UT">Utah</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WA">Washington</option>
+<option value="WV">West Virginia</option>
+<option value="WI">Wisconsin</option>
+<option value="WY">Wyoming</option>
+<option value="DC">District of Columbia</option>
+<option value="PR">Puerto Rico</option>
+</select>
+</div>
+
+<div class="inline">
+<label>Zip Code:</label><br>
+<input type="text" pattern="\d{5,10}" required>
+</div>
+
+</div>
+
+<!-- ================= EMAIL & USER LOGIN ================= -->
+<div class="section">
+<h3>Account Information</h3>
+
+<label>Email Address:</label><br>
+<input type="email" required><br><br>
+
+<label>Desired User ID:</label><br>
+<input type="text" maxlength="20" required><br><br>
+
+<label>Password:</label><br>
+<input type="password" required><br><br>
+
+<label>Re-enter Password:</label><br>
+<input type="password" required>
+</div>
+
+<!-- ================= TEXT AREA ================= -->
+<div class="section">
+<h3>Describe Your Current Symptoms</h3>
+<textarea rows="3" cols="50" required></textarea>
+</div>
+
+<!-- ================= CHECKBOXES ================= -->
+<div class="section">
+<h3>Medical History (Check all that apply)</h3>
+
+<input type="checkbox"> Chicken Pox<br>
+<input type="checkbox"> Measles<br>
+<input type="checkbox"> Covid-19<br>
+<input type="checkbox"> Small Pox<br>
+<input type="checkbox"> Tetanus<br>
+</div>
+
+<!-- ================= RADIO BUTTONS ================= -->
+<div class="section">
+<h3>Gender</h3>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+</div>
+
+<div class="section">
+<h3>Have you been vaccinated?</h3>
+<input type="radio" name="vaccinated"> Yes
+<input type="radio" name="vaccinated"> No
+</div>
+
+<div class="section">
+<h3>Do you have insurance?</h3>
+<input type="radio" name="insurance"> Yes
+<input type="radio" name="insurance"> No
+</div>
+
+<!-- ================= SLIDER ================= -->
+<div class="section">
+<h3>On a scale of 1–10, how is your health?</h3>
+<input type="range" min="1" max="10">
+</div>
+
+<!-- ================= BUTTONS ================= -->
+<div class="section">
+<input type="reset" value="CLEAR AND START OVER">
+<input type="submit" value="Submit">
+</div>
+
+</form>
+
+</body>
+</html>
