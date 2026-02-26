@@ -5,7 +5,7 @@ html, body {
   padding: 0;
 }
 
-/* New Font + Main Colors */
+/* Font */
 body {
   display: flex;
   flex-direction: column;
@@ -112,3 +112,4 @@ label {
   color: #0a1f44;                  /* Navy */
 
 }
+
