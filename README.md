@@ -1,4 +1,4 @@
-# MIS3371 Assignment 1
+# MIS 3371 Assignment 1
 Website Form (https://gmlopez2.github.io/patient-form.html)
 
 
